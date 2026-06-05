@@ -7,6 +7,6 @@ int main() {
     /*scanf("%19s", &colour); /*format specifier in quotes and the name of the variable we declared
                             & is not necessary for arrays like this example but very important for other formats */
 
-    fgets(colour, 19, stdin);
+    fgets(colour, 19, stdin); //for arrays with whitespaces
     printf("oh so your bugatti is %s?", colour); //working as normal!
 }
