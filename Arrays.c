@@ -10,8 +10,18 @@ int main() {
     morenumbers[1] = 10;
     morenumbers[2] = 20;
 
-    for(int i = 4; i != 0, i--) {
-        printf("1st position of another array: %d", numbers[i]);
+    printf("Array contents of morenumbers: ");
+    for(int i = 3; i != 0, i--;) { //for loop to print all contents of array
+        printf("%d\n", morenumbers[i]);
     }
+    
+    //sizeof(variable) displays the memory occupied by the variable in bytes, an element occupies 
+    //8 bytes, so n an array would have the size of n * 8 bytes. 
+
+    printf("Array contents of numbers: ");
+    for(int j = sizeof(numbers)/sizeof(numbers[0]); j != 0, j--;){
+        printf("%d\n", numbers[j]);
+    }
+
     return 0;
 }
