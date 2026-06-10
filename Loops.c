@@ -5,12 +5,13 @@ int main() {
     //FOR LOOP!
 
     for (int i = 1; i<=10; i++) { //format: initializing index, condition how long itll run, index updater
+                                  //reads through numbers 1 to 10
 
         if (i == 5) {
-            continue;
+            continue; //skips the number 5
         }
         else if (i == 7) {
-            break;
+            break; //discards the whole loop (or counting) once 7 is reached
         }
 
         printf("%d\n", i);
