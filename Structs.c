@@ -9,6 +9,7 @@ struct attributes{
 int main() {
     struct attributes Man1;
     struct attributes Woman1;
+    struct attributes Woman2 = {"Liz", 46};
 
     strcpy(Man1.name, "John");
     Man1.age = 15;
@@ -18,4 +19,6 @@ int main() {
 
     printf("%d\n", Man1.age);
     printf("%s", Woman1.name);
+    printf("%s, %d", Woman2.name, Woman2.age);
 }
+
