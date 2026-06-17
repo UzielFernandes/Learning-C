@@ -19,7 +19,7 @@ int main() {
     //8 bytes, so n an array would have the size of n * 8 bytes. 
 
     printf("Array contents of numbers: ");
-    for(int j = sizeof(numbers)/sizeof(numbers[0]); j != 0, j--;){
+    for(int j = sizeof(numbers)/sizeof(numbers[0]); j != 0, j--;){ //print elements of array even if it is edited
         printf("%d\n", numbers[j]);
     }
 
