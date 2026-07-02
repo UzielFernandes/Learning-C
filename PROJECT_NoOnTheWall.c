@@ -15,14 +15,13 @@ int userfirst(int randomrange,int min,int max) {
     while(choiceno != randomrange || choiceno < randomrange) {
 
         scanf("%d", &choiceno);
-        printf("%d", randomrange);
 
         if(attempts == 0) { //first attempt
             if(choiceno == randomrange-1 || choiceno == randomrange-2 || choiceno == randomrange - 3 || choiceno <= comp_choice) { //first attempt
                 printf("invalid \n");
         }
 
-            else if(choiceno == randomrange || choiceno > randomrange) {
+            else if(choiceno == randomrange-1 || choiceno > randomrange) {
             printf("YOU LOSE!");
             break;
             }
@@ -37,7 +36,7 @@ int userfirst(int randomrange,int min,int max) {
                 printf("invalid");
         }
 
-        else if(choiceno == randomrange) {
+        else if(choiceno == randomrange-1 || choiceno > randomrange) {
         printf("YOU LOSE!");
         break;
         }
